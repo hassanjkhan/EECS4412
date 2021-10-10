@@ -33,6 +33,10 @@ for line in pd.read_csv(fileName,chunksize=1):
     # if yes then add the Consequent to recommended else do not add
     if (contains(transactions,Antecedents)):
         recommended.append(Consequent)
-
-
-print(recommended)
+        
+final_recommended = []
+for each_list in recommended:
+    for each in each_list:
+        if each not in final_recommended:
+            final_recommended.append(each)
+print(final_recommended)
