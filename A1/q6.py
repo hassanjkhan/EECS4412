@@ -6,8 +6,8 @@ transactions = sys.argv[1].split(",")
 recommended = []
 ID2NameFile = "ID2Name.csv"
 itemNames = {}
-print("transactions below:")
-print(transactions)
+# print("transactions below:")
+# print(transactions)
 
 def contains(transactions, Antecedents):
     for each in Antecedents:
